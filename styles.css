@@ -1,0 +1,79 @@
+/* Color variables */
+:root {
+  --gold: #c9a24d;
+  --brown: #4b3621;
+  --wine: #6b1e2e;
+  --light: #f7f3ee;
+}
+
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--light);
+  color: var(--brown);
+  margin: 0;
+}
+
+/* Header */
+.header {
+  background-color: var(--wine);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Content wrapper */
+.content {
+  padding: 20px;
+}
+
+/* Feature section */
+.feature-box {
+  display: flex;
+  background-color: white;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+/* Image */
+.feature-box img {
+  width: 200px;
+  height: auto;
+  margin-right: 15px;
+}
+
+/* Text content */
+.text-box {
+  max-width: 500px;
+}
+
+/* Links */
+a {
+  color: var(--wine);
+  text-decoration: none;
+}
+
+/* Past section */
+.past {
+  margin-top: 30px;
+}
+
+/* Past list uses flexbox */
+.past-list {
+  display: flex;
+  gap: 10px;
+}
+
+/* Individual past item */
+.past-item {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid var(--gold);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
