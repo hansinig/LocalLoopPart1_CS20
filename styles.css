@@ -4,6 +4,8 @@
   --brown: #4B3621;
   --wine: #6B1E2E;
   --light: #F7F3EE;
+  --gray: #EEEEEE;
+  --accent: #F0E6D6;
 }
 
 /* PAGE BASICS */
@@ -47,7 +49,7 @@ body {
 
 /* SECONDARY NAV */
 .secondary-nav a {
-  color: #F0E6D6;
+  color: var(--accent);
   margin-left: 10px;
   text-decoration: none;
   font-size: 13px;
@@ -82,7 +84,7 @@ body {
 /* SIDEBAR */
 .sidebar {
   width: 30%;
-  background-color: #EEEEEE;
+  background-color: var(--gray);
   padding: 15px;
   margin-left: 10px;
 }
