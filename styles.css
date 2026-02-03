@@ -1,14 +1,16 @@
 :root {
-  --gold: #c9a24d;
-  --brown: #4b3621;
-  --wine: #6b1e2e;
-  --light: #f7f3ee;
+  --white: #FFFFFF;
+  --gold: #C9A24D;
+  --brown: #4B3621;
+  --wine: #6B1E2E;
+  --light: #F7F3EE;
 }
 
+/* PAGE BASICS */
 body {
-  font-family: Arial, sans-serif;
-  background-color: var(--light);
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0;
+  background-color: var(--light);
   color: var(--brown);
 }
 
@@ -18,46 +20,50 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--wine);
-  padding: 15px;
-  color: white;
+  padding: 10px 15px;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
 .logo {
   background-color: var(--gold);
   color: var(--wine);
-  padding: 10px;
+  padding: 8px 12px;
   font-weight: bold;
+  margin-right: 20px;
 }
 
+/* PRIMARY NAV */
 .nav a {
-  color: white;
-  margin-left: 15px;
+  color: var(--white);
+  margin-right: 15px;
   text-decoration: none;
+  font-size: 14px;
 }
 
 /* SECONDARY NAV */
-.secondary-nav {
-  background-color: var(--brown);
-  padding: 10px;
-}
-
 .secondary-nav a {
-  color: white;
-  margin-right: 15px;
+  color: #F0E6D6;
+  margin-left: 10px;
   text-decoration: none;
+  font-size: 13px;
 }
 
 /* HERO */
 .hero {
   background-color: var(--gold);
-  padding: 30px;
   text-align: center;
+  padding: 30px;
 }
 
 /* PAGE HEADING */
 .page-heading {
+  background-color: var(--white);
   padding: 20px;
-  background-color: white;
 }
 
 /* MAIN LAYOUT */
@@ -69,23 +75,22 @@ body {
 /* CONTENT */
 .content {
   width: 70%;
-  background-color: white;
+  background-color: var(--white);
   padding: 15px;
 }
 
 /* SIDEBAR */
 .sidebar {
   width: 30%;
-  background-color: #eee;
+  background-color: #EEEEEE;
   padding: 15px;
   margin-left: 10px;
 }
 
 /* FOOTER */
 .footer {
+  background-color: var(--wine);
+  color: var(--white);
   text-align: center;
   padding: 15px;
-  background-color: var(--wine);
-  color: white;
-  margin-top: 20px;
 }
