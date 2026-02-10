@@ -1,3 +1,4 @@
+/* Styling Doc - CSS */
 :root {
   --white: #FFFFFF;
   --gold: #C9A24D;
@@ -8,7 +9,7 @@
   --accent: #F0E6D6;
 }
 
-/* PAGE BASICS */
+/* 1. PAGE BASICS */
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0;
@@ -16,13 +17,16 @@ body {
   color: var(--brown);
 }
 
-/* HEADER */
+/* 2. HEADER */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--wine);
-  padding: 10px 15px;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-left {
@@ -30,69 +34,347 @@ body {
   align-items: center;
 }
 
-/* LOGO */
+/* 3. LOGO */
 .logo {
   background-color: var(--gold);
   color: var(--wine);
-  padding: 8px 12px;
+  padding: 8px 14px;
   font-weight: bold;
+  font-size: 18px;
   margin-right: 20px;
+  letter-spacing: 1px;
+  border-radius: 3px;
 }
 
-/* PRIMARY NAV */
+/* 4. PRIMARY NAV */
 .nav a {
   color: var(--white);
   margin-right: 15px;
   text-decoration: none;
   font-size: 14px;
+  transition: color 0.2s;
 }
 
-/* SECONDARY NAV */
+/* 5. HOVER EFFECT - nav links */
+.nav a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+/* 6. SECONDARY NAV */
 .secondary-nav a {
   color: var(--accent);
   margin-left: 10px;
   text-decoration: none;
   font-size: 13px;
+  transition: color 0.2s;
 }
 
-/* HERO */
+.secondary-nav a:hover {
+  color: var(--white);
+}
+
+/* 7. HERO - uses background image */
 .hero {
-  background-color: var(--gold);
+  background-image: url('images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: var(--gold); /* fallback */
   text-align: center;
-  padding: 30px;
+  padding: 80px 20px;
+  position: relative;
 }
 
-/* PAGE HEADING */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(75, 54, 33, 0.45);
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 1;
+  color: var(--white);
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  letter-spacing: 3px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: var(--accent);
+}
+
+/* 8. PAGE HEADING */
 .page-heading {
   background-color: var(--white);
-  padding: 20px;
+  padding: 20px 25px;
+  border-bottom: 2px solid var(--gold);
 }
 
-/* MAIN LAYOUT */
+.page-heading h2 {
+  margin: 0;
+  color: var(--wine);
+}
+
+/* 9. MAIN LAYOUT */
 .main {
   display: flex;
   padding: 20px;
+  gap: 15px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* CONTENT */
+/* 10. CONTENT */
 .content {
-  width: 70%;
+  flex: 1;
   background-color: var(--white);
-  padding: 15px;
+  padding: 20px;
+  border-radius: 4px;
 }
 
-/* SIDEBAR */
+.content h3 {
+  color: var(--wine);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 6px;
+}
+
+/* 11. SIDEBAR */
 .sidebar {
-  width: 30%;
+  width: 260px;
   background-color: var(--gray);
   padding: 15px;
-  margin-left: 10px;
+  border-radius: 4px;
+  height: fit-content;
 }
 
-/* FOOTER */
+.sidebar h4 {
+  color: var(--wine);
+  margin-top: 0;
+}
+
+/* 12. FOOTER */
 .footer {
   background-color: var(--wine);
   color: var(--white);
   text-align: center;
-  padding: 15px;
+  padding: 20px 15px;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* 13. CARDS (Explore page) */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 6px;
+  overflow: hidden;
+  width: calc(33.33% - 14px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 14px;
+}
+
+.card-body h3 {
+  margin: 0 0 8px;
+  color: var(--wine);
+  font-size: 16px;
+}
+
+.card-body p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--brown);
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--brown);
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+/* 14. TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+th {
+  background-color: var(--wine);
+  color: var(--white);
+  padding: 10px 12px;
+  text-align: left;
+}
+
+td {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--gray);
+}
+
+tr:nth-child(even) {
+  background-color: var(--accent);
+}
+
+/* 15. FORM STYLES */
+.form-wrap {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.form-wrap h2 {
+  color: var(--wine);
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--brown);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: var(--light);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.btn {
+  background-color: var(--wine);
+  color: var(--white);
+  border: none;
+  padding: 11px 28px;
+  font-size: 15px;
+  font-family: Georgia, serif;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--brown);
+}
+
+/* 16. ABOUT PAGE */
+.about-section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.about-section h2 {
+  color: var(--wine);
+}
+
+.about-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* 17. RESPONSIVE - mobile friendly */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .secondary-nav {
+    margin-left: 0;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .sidebar {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card-grid {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .form-wrap {
+    margin: 15px;
+    padding: 20px;
+  }
 }
