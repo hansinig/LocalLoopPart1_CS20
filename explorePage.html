@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalLoop – Explore</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- INTERNAL STYLESHEET -->
+  <style>
+    .explore-hero {
+      background-color: var(--brown);
+      color: var(--white);
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .explore-hero h1 {
+      margin: 0;
+      font-size: 36px;
+      color: var(--gold);
+    }
+    .explore-hero p {
+      color: var(--accent);
+      font-size: 15px;
+      margin-top: 8px;
+    }
+    .filter-bar {
+      background-color: var(--white);
+      padding: 14px 20px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      border-bottom: 1px solid var(--gray);
+    }
+    .filter-bar span {
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--brown);
+    }
+    .filter-btn {
+      background-color: var(--accent);
+      border: 1px solid var(--gold);
+      color: var(--brown);
+      padding: 5px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 13px;
+      font-family: Georgia, serif;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .filter-btn:hover {
+      background-color: var(--gold);
+      color: var(--white);
+    }
+    .section-label {
+      padding: 20px 20px 0;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section-label h2 {
+      color: var(--wine);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="logo">LocalLoop</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="secondary-nav">
+      <a href="#">Boston</a>
+      <a href="#">New York</a>
+      <a href="#">SF</a>
+    </div>
+  </div>
+
+  <div class="explore-hero">
+    <h1>Explore Local Spots</h1>
+    <p>Hand-picked places in your city, curated by people who actually live there.</p>
+  </div>
+
+  <div class="filter-bar">
+    <span>Filter by:</span>
+    <a class="filter-btn" href="#">All</a>
+    <a class="filter-btn" href="#">Cafés</a>
+    <a class="filter-btn" href="#">Bars</a>
+    <a class="filter-btn" href="#">Shops</a>
+    <a class="filter-btn" href="#">Restaurants</a>
+    <a class="filter-btn" href="#">Parks</a>
+  </div>
+
+  <div class="section-label">
+    <h2>Boston</h2>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <img src="images/cafe.jpg" alt="The Thinkboo Cup café interior">
+      <div class="card-body">
+        <h3>The Thinkboo Cup</h3>
+        <p>A calm afternoon café known for its honey latte and good vibes. Great for solo work sessions.</p>
+        <span class="tag">Café</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/bar.jpg" alt="Nighttime Lounge interior">
+      <div class="card-body">
+        <h3>Nighttime Lounge</h3>
+        <p>A neighborhood bar with classic cocktails and low lighting. The Old Fashioned here is a must-try.</p>
+        <span class="tag">Bar</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/flowers.jpg" alt="Petal and Stone flower shop">
+      <div class="card-body">
+        <h3>Petal &amp; Stone</h3>
+        <p>Seasonal bouquets and custom arrangements. A local gem for gifts and everyday beauty.</p>
+        <span class="tag">Flower Shop</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/bookshop.jpg" alt="A cozy local bookshop">
+      <div class="card-body">
+        <h3>The Margin Notes</h3>
+        <p>An independent bookshop with a rotating staff picks shelf and a resident cat named Ellipsis.</p>
+        <span class="tag">Bookshop</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/bakery.jpg" alt="Fresh bread at a local bakery">
+      <div class="card-body">
+        <h3>Breadline Bakery</h3>
+        <p>Open at 6 am for fresh sourdough, croissants, and rotating seasonal pastries. Cash and card.</p>
+        <span class="tag">Bakery</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/park.jpg" alt="A sunny urban park">
+      <div class="card-body">
+        <h3>Riverway Meadow</h3>
+        <p>A quiet stretch of park along the water. Perfect for morning walks or afternoon reading.</p>
+        <span class="tag">Park</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>© 2026 LocalLoop &nbsp;|&nbsp;
+      <a href="contact.html">Contact Us</a> &nbsp;|&nbsp;
+      <a href="about.html">About</a>
+    </p>
+    <p style="font-size:12px; color: #ccc;">Discover local places worth sharing.</p>
+  </div>
+
+</body>
+</html>
