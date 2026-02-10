@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>LocalLoop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalLoop – Home</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <!-- HEADER: Logo + Navs -->
+  <!-- FIXED HEADER -->
   <div class="header">
     <div class="header-left">
-      <div class="logo">LOGO</div>
-
-      <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Explore</a>
-        <a href="#">About</a>
-      </div>
+      <div class="logo">LocalLoop</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-
     <div class="secondary-nav">
       <a href="#">Boston</a>
       <a href="#">New York</a>
@@ -27,7 +26,7 @@
     </div>
   </div>
 
-  <!-- HERO -->
+  <!-- HERO (background image) -->
   <div class="hero">
     <h1>LocalLoop</h1>
     <p>Discover local places worth sharing.</p>
@@ -44,42 +43,77 @@
     <!-- MAIN CONTENT -->
     <div class="content">
 
-      <h3> The Thinkboo Cup (Café)</h3>
+      <h3>The Thinkboo Cup (Café)</h3>
       <p>
-        A small café known for its calm atmosphere and friendly staff.
-        Locals enjoy stopping by in the afternoon.
+        A small café tucked into a quiet side street, known for its warm
+        atmosphere and genuinely friendly staff. Locals stop by in the afternoon
+        to work or catch up over a honey latte.
       </p>
       <ul>
         <li>Best time: Afternoon</li>
         <li>Popular item: Honey latte</li>
         <li>Price range: Under $15</li>
       </ul>
-
       <hr>
 
-      <h3> Nighttime Lounge (Bar)</h3>
+      <h3>🍸 Nighttime Lounge (Bar)</h3>
       <p>
-        A cozy neighborhood bar with low lighting and classic cocktails.
-        Popular for quiet conversations and late evenings.
+        A cozy neighborhood bar with low lighting and classic cocktails. Popular
+        for quiet conversations and late evenings. The Old Fashioned here is
+        made the right way — no shortcuts.
       </p>
       <ul>
         <li>Best time: After 8pm</li>
         <li>Popular drink: Old Fashioned</li>
-        <li>Vibe: Relaxed</li>
+        <li>Vibe: Relaxed, no cover charge</li>
       </ul>
-
       <hr>
 
-      <h3> Petal & Stone (Flower Shop)</h3>
+      <h3>Petal &amp; Stone (Flower Shop)</h3>
       <p>
         A small flower shop offering seasonal bouquets and custom arrangements.
-        Known for its welcoming staff.
+        Known for its welcoming staff and beautiful window displays that change
+        with the seasons.
       </p>
       <ul>
         <li>Best time: Morning</li>
         <li>Specialty: Seasonal bouquets</li>
-        <li>Price range: Varies</li>
+        <li>Price range: $12–$80</li>
       </ul>
+      <hr>
+
+      <!-- TABLE requirement -->
+      <h3>Quick Comparison</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Place</th>
+            <th>Category</th>
+            <th>Price Range</th>
+            <th>Best For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Thinkboo Cup</td>
+            <td>Café</td>
+            <td>Under $15</td>
+            <td>Working, relaxing</td>
+          </tr>
+          <tr>
+            <td>Nighttime Lounge</td>
+            <td>Bar</td>
+            <td>$10–$18 per drink</td>
+            <td>Date night, catch-ups</td>
+          </tr>
+          <tr>
+            <td>Petal &amp; Stone</td>
+            <td>Flower Shop</td>
+            <td>$12–$80</td>
+            <td>Gifts, special occasions</td>
+          </tr>
+        </tbody>
+      </table>
 
     </div>
 
@@ -88,22 +122,36 @@
       <h4>About These Picks</h4>
       <p>
         These locations were chosen based on local recommendations
-        and overall atmosphere.
+        and overall atmosphere. We visit every place before listing it.
       </p>
-
       <p><strong>Categories:</strong></p>
       <ul>
         <li>Café</li>
         <li>Bar</li>
         <li>Flower Shop</li>
       </ul>
+      <hr>
+      <p><strong>Explore by city:</strong></p>
+      <ul>
+        <li><a href="#">Boston</a></li>
+        <li><a href="#">New York</a></li>
+        <li><a href="#">San Francisco</a></li>
+      </ul>
+      <hr>
+      <p style="font-size:13px; color:#888;">
+        Last updated: January 2026
+      </p>
     </div>
 
   </div>
 
-  <!-- FOOTER -->
+  <!-- FIXED FOOTER -->
   <div class="footer">
-    <p>© 2026 LocalLoop</p>
+    <p>© 2026 LocalLoop &nbsp;|&nbsp;
+      <a href="contact.html">Contact Us</a> &nbsp;|&nbsp;
+      <a href="about.html">About</a>
+    </p>
+    <p style="font-size:12px; color: #ccc;">Discover local places worth sharing.</p>
   </div>
 
 </body>
