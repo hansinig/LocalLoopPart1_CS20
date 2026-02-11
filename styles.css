@@ -76,7 +76,7 @@ body {
 
 /* 7. HERO - uses background image */
 .hero {
-  background-image: url('images/hero-bg.jpg');
+  background-image: url('hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-color: var(--gold); /* fallback */
